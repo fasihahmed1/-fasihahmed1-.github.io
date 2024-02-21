@@ -1,0 +1,340 @@
+body{
+  background-color: #06043E;
+ height: 1000%;
+}
+
+.top-box{
+    font-size: 70px;
+text-align: center;
+position: relative;
+
+}
+.top-box1{
+    font-size: large;
+    text-align: center;
+    position: relative;
+   
+  
+
+}
+
+#typing-animation {
+  overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 6s steps(60, end); /* Adjust the duration and steps as needed */
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+.blob1{
+  position: absolute;
+   right:  70%;
+   height: 50%;
+}
+.first-para{
+  font-size: 20px;
+   text-align: end;
+ }
+
+
+
+@media (max-width:2560px) {
+    #nav-bar{
+        padding-right: 7%;
+       } 
+       #main-cells{
+        text-align: center;
+        padding-right: 17%;
+        }
+        
+      
+}
+
+  
+  
+@media (max-width:570px) {
+    
+   #nav-bar{
+    padding-right: 80%;
+   }   
+   #typing-animation{
+    white-space: wrap; 
+    animation: none /* Adjust the duration and steps as needed */
+
+   }
+   .first-para{
+    text-align: center;
+   }
+   .blob1{
+    position: absolute;
+     right:  10%;
+     height: 40%;
+  }
+ 
+   
+   }
+   #top-image{
+    background-image: url(../image/breen\ building\ 2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   animation: changeBackground 20s infinite;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+
+  @keyframes changeBackground {
+      0% {
+          background-image: url(../image/green\ building1.png);
+      }
+      20% {
+          background-image: url(../image/green\ building2.png);
+      }
+      40% {
+          background-image: url(../image/green\ building3.png);
+      }
+      60% {
+        background-image: url(../image/breen\ building\ 2.avif);
+    }
+    80% {
+      background-image: url(../image/green\ building1.png);
+  }
+  100% {
+    background-image: url(../image/green\ building3.png);
+}
+  }
+  @media (max-width: 768px) {
+    #sub-cell-1 {
+      flex-basis: 100%; /* Each item takes 100% width */
+    }
+    #sub-cell-2 {
+      flex-basis: 100%; /* Each item takes 100% width */
+    }
+    #sub-cell-3 {
+      flex-basis: 100%; /* Each item takes 100% width */
+    }
+  }
+   
+
+li:hover{
+  transition: .5s;
+  opacity: .8;
+}
+
+#main-cells{
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: center;
+   align-items: center;
+   padding-left: 20%;
+gap: 40px;
+  }
+  #sub-cell-1{
+    height: 395px;
+    width: 290px;
+    border-radius: 20px;
+    padding: 1%;
+    border: 2px solid #24A148 ;
+
+
+
+
+    }
+    #sub-cell-1:hover{
+      margin-top: -40px;  
+      transition: 1s; 
+      color: white;
+      background-color: #24A148;
+    }
+    
+    #sub-cell-2{
+    height: 395px;
+    width: 290px;
+    border-radius: 20px;
+    padding: 1%;
+    border: 2px solid #24A148 ;
+
+
+    }
+    #sub-cell-2:hover{
+      margin-top: -40px;   
+      transition: 1s;
+      background-color: #24A148;
+
+    }
+    #sub-cell-3{
+    height: 395px;
+    width: 290px;
+    border-radius: 20px ;
+    padding: 1%;
+    border: 2px solid #24A148 ;
+
+    }
+    #sub-cell-3:hover{
+      margin-top: -40px;   
+      transition: 1s;
+      background-color: #24A148;
+      
+    }
+    
+
+  
+  .container {
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.video-container {
+    flex: 1;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.video-container:last-child {
+    margin-right: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blur-effect {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    transition: bottom 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.video-container:hover .blur-effect {
+    bottom: 0;
+}
+
+.link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+ 
+
+
+* { box-sizing: border-box; }
+ 
+  
+  
+  
+  .carousel-cell1 {
+    width: 100%;
+    height: 550px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    padding: 5%;
+    background-image: url(../image/p1.png);
+    background-size: cover;
+  }
+  .carousel-cell2 {
+    width: 100%;
+    height: 550px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    padding: 5%;
+    background-image: url(../image/p2.png);
+    background-size: cover;
+  
+  }
+  .carousel-cell3 {
+    width: 100%;
+    height: 550px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    padding: 5%;
+    background-image: url(../image/p3.png);
+    background-size: cover;
+  
+  }
+  .carousel-cell4 {
+    width: 100%;
+    height: 550px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    padding: 5%;
+    background-image: url(../image/p4.png);
+    background-size: cover;
+  
+  }
+  .carousel-cell5 {
+    width: 100%;
+    height: 550px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    padding: 5%;
+    background-image: url(../image/p5.png);
+    background-size: cover;
+  
+  }
+  
+  
+  
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter();
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+  /* position dots in gallery */
+  .flickity-page-dots {
+    bottom: 0px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: rgb(0, 0, 0);
+    border:  solid rgb(0, 0, 0);
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: rgb(0, 0, 0);
+  }
